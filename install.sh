@@ -28,7 +28,6 @@ for file in aliases/*; do
     if [ -f "$file" ]; then
         filename=$(basename "$file")
         if ask "${filename} ?"; then
-            echo >> "$SA"
             cat "$(realpath "$file")" >> "$SA"
         fi
     fi

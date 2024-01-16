@@ -1,3 +1,4 @@
+# other aliases
 alias ll="lsd -lah"
 alias la="lsd -lh"
 alias bat="batcat"
