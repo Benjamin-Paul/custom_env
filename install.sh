@@ -43,8 +43,6 @@ SH="${HOME}/.bashrc"
 # 	SH="$ZSHRC"
 # fi
 
-echo >> $SH
-
 echo '# ------------------- install custom_env' >> $SH
 
 # Ask which files should be sourced
