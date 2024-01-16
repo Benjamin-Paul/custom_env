@@ -3,7 +3,7 @@ set number
 set ls=2
 highlight LineNr ctermfg=darkgrey
 highlight NonText ctermfg=darkgrey
-highlight StatusLine ctermfg=150
+highlight StatusLine ctermfg=137
 
 set tabstop=4
 set shiftwidth=4
