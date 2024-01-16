@@ -1,0 +1,3 @@
+# WSL
+alias gowin="cd /mnt/c/Users/benja/"
+alias godown="cd /mnt/c/Users/benja/Downloads/"
