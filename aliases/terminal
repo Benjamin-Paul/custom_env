@@ -1,6 +1,7 @@
 # other aliases
 alias ll="lsd -lah"
 alias la="lsd -lh"
+alias ls="lsd"
 alias cls="clear"
 alias bat="batcat"
 alias copy="xclip -selection clipboard"
