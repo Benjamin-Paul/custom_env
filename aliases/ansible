@@ -1,2 +1,2 @@
 # ansible
-alias ap="ansible-playbook"
+alias ap="ansible-playbook --ask-become-pass"
