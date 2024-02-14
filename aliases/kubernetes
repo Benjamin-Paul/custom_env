@@ -1,4 +1,2 @@
 # kubernetes
 alias kube="kubectl"
-alias kubens="kubectl config set-context $(kubectl config current-context) --namespace"
-alias kubecns="kubectl config get-contexts | sed -n '2 p' | awk '{print $NF}'"
