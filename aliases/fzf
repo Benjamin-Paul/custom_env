@@ -7,8 +7,8 @@ ff () {
 }
 fd () {
      newdir="$(fzf --preview 'echo $(dirname {}); echo; ls $(dirname {})' | xargs bash -c 'dirname $0')"
-     echo "Changed directory to : $newdir"
-     echo "Content - - -"
+     echo "$newdir"
+     echo "----------"
      cd "$newdir"
      ls
 }
