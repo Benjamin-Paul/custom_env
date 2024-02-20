@@ -1,1 +1,14 @@
-alias ff="fzf --print0 | xargs -0 -o vim"
+# fzf
+fe () {
+    fzf --print0 --preview 'cat {}' | xargs -0 -o nvim
+}
+fs () {
+    fzf --print0 --preview 'cat {}' | xargs -0 -o batcat
+}
+fd () {
+     newdir="$(fzf --preview 'echo $(dirname {}); echo; ls $(dirname {})' | xargs bash -c 'dirname $0')"
+     echo "Changed directory to : $newdir"
+     echo "Content - - -"
+     cd "$newdir"
+     ls
+}
