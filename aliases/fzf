@@ -2,7 +2,7 @@
 fe () {
     fzf --print0 --preview 'cat {}' | xargs -0 -o nvim
 }
-fs () {
+ff () {
     fzf --print0 --preview 'cat {}' | xargs -0 -o batcat
 }
 fd () {
