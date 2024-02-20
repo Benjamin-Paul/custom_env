@@ -1,14 +1,17 @@
 # fzf
 fe () {
-    fzf --print0 --preview 'cat {}' | xargs -0 -o nvim
+    target="$(fzf --bind 'tab:up,btab:down' --preview 'cat {}')"
+    if [[ -n "$target" ]]; then
+        dir="$(dirname $target)"
+        nvim "$target"
+        cd "$dir"
+    fi
 }
 ff () {
-    fzf --print0 --preview 'cat {}' | xargs -0 -o batcat
-}
-fd () {
-     newdir="$(fzf --preview 'echo $(dirname {}); echo; ls $(dirname {})' | xargs bash -c 'dirname $0')"
-     echo "$newdir"
-     echo "----------"
-     cd "$newdir"
-     ls
+     target="$(fzf --bind 'tab:up,btab:down' --preview 'cat {}')"
+     if [[ -n "$target" ]]; then
+        dir="$(dirname $target)"
+        batcat "$target"
+        cd "$dir"
+    fi
 }
