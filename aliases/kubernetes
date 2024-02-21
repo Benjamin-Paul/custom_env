@@ -4,5 +4,5 @@ kubeff () {
     kubectl get pods -A --no-headers | fzf --bind 'tab:up,btab:down'| awk '{print $2, $1}' | xargs -n 2 bash -c 'kubectl edit pod $0 -n $1'
 }
 kubedd () {
-    kubectl get pods -A --no-headers | fzf --bind 'tab:up,btab:down'| awk '{print $2, $1}' | xargs -n 2 bash -c 'kubectl describe pod $0 -n $1 | less'
+    kubectl get pods -A --no-headers | fzf --bind 'tab:up,btab:down'| awk '{print $2, $1}' | xargs -n 2 bash -l -c 'kubectl describe pod $0 -n $1 | batcat -l yaml'
 }
