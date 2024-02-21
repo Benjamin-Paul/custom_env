@@ -1,0 +1,7 @@
+Add the yaml.lang file to /usr/share/source-highlight/
+Add those two lines to the lang.map file in the same dir :
+	yaml = yaml.lang
+	yml = yaml.lang
+
+You can find those instructions on this page : 
+https://gist.github.com/tkfm-yamaguchi/c4952b355bb7a27552a5f23e0c53b65f

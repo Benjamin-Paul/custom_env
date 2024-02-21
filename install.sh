@@ -66,3 +66,10 @@ fi
 if ask "Do you want to install .vimrc?"; then
     ln -s "$(realpath ".vimrc")" ~/.vimrc
 fi
+
+# Packages installation
+if ask "Install required packages ?"; then
+    for i in $(cat packages); 
+        do sudo apt install $i;
+    done
+fi
