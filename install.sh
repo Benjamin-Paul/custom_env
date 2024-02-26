@@ -67,6 +67,11 @@ if ask "Do you want to install .vimrc?"; then
     ln -s "$(realpath ".vimrc")" ~/.vimrc
 fi
 
+# Lvim conf
+if ask "Do you want to install .config/lvim ?"; then
+    ln -s "$(realpath "./lvim")" ~/.config/lvim
+fi
+
 # Packages installation
 if ask "Install required packages ?"; then
     for i in $(cat packages); 
