@@ -2,7 +2,7 @@
 require("plugins")
 require("mason-config")
 require("remap")
-require("barbar-config")
+-- require("barbar-config")
 require("lspconfig").pylsp.setup{}
 require("nvim-cmp")
 

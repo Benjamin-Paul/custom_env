@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     use {
         "nvim-neo-tree/neo-tree.nvim",
         branch = "v3.x",
-        requires = { 
+        requires = {
             "nvim-lua/plenary.nvim",
             "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
             "MunifTanjim/nui.nvim",
@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
     }
     use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
     use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
-    use 'romgrk/barbar.nvim'
+    -- use 'romgrk/barbar.nvim'
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/vim-vsnip'
