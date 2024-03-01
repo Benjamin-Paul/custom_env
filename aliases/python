@@ -1,5 +1,5 @@
 # python
 alias py="python3"
 alias venv="source ./.venv/bin/activate"
-alias vevnc="python3 -m venv .venv"
+alias venvc="python3 -m venv .venv"
 alias venvd="deactivate"
